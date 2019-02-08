@@ -7,6 +7,10 @@ $( document ).ready(function() {
     $( ".cross" ).show();
   });
 });
+$("#uploadMainButton").click(function(){
+    console.log("test");  
+    res.redirect('/upload.handlebars');
+});
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
     $( ".cross" ).hide();
@@ -14,3 +18,4 @@ $( ".cross" ).click(function() {
     });
   });
 });
+
