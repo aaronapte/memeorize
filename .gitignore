@@ -7,9 +7,17 @@ lib-cov
 *.pid
 *.gz
 
+!.gitignore
+!README.md
+!*.json
+!app.js
+!LICENSE
+!Procfile
+!app.js
+
 pids
 logs
 results
 
 npm-debug.log
-#node_modules
+node_modules
