@@ -7,10 +7,10 @@ $( document ).ready(function() {
     $( ".cross" ).show();
   });
 });
-$("#uploadMainButton").click(function(){
-    console.log("test");  
-    res.redirect('/upload.handlebars');
-});
+// $("#uploadMainButton").click(function(){
+//     console.log("test");  
+//     res.redirect('upload');
+// });
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
     $( ".cross" ).hide();
