@@ -2,76 +2,65 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  width:100%;
+	height:100vh;
+  	background:#ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
+header{
+	width:100%;
+	background:#ffffff;
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #dddddd;
 }
-
-.bottomnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
-  position: fixed;
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
-
-.topnav p{
-	float: left;
-	font-size: 50px;
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:50px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;max-height:250px;/* you can change as you need it */
+   overflow:auto;/* to get scroll */}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;max-height:250px;/* you can change as you need it */
+   overflow:auto;/* to get scroll */}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid; max-height:250px;/* you can change as you need it */
+   overflow:auto;/* to get scroll */}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
 
-.topnav .search-container {
-  float: right;
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
 }
-
-.topnav p{
-	float: left;
-	font-size: 50px;
-}
-
-
-.topnav a{
-	float: left;
-	font-size: 50px;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-	text-align: center;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-	text-align: center;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
