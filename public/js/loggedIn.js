@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-    $('#login-profile-button').append("Log In");
 
+  $('#login-profile-button').append("Profile");
   $( ".cross" ).hide();
   $( ".menu" ).hide();
   $( ".hamburger" ).click(function() {
@@ -10,12 +10,15 @@ $( document ).ready(function() {
   });
   console.log('working as intended');
 });
- $('#login-profile-button').click(function(){
-  $("body").load("login");
- });
+$('#login-profile-button').click(function(){
+  if (loggedIn == false){
+    loggedIn==true;
+    $("body").load("login");
+  }
+});
  $("#uploadMainButton").click(function(){
      console.log("test");
-     $("body").load("login")
+     $("body").load("upload")
  });
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
