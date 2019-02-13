@@ -43,12 +43,12 @@
     </div>
   </div>
 </nav>
+{{#each pictures}}
 <div class="main" style="padding-top: 70px; padding-bottom: 70px;">
   <div style="padding-left:16px">
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 500px; height: 500px; padding-bottom: 10px;" src="meme1.png"></img>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 500px; height: 500px; padding-bottom: 10px;" src="meme2.png"></img>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 500px; height: 500px; padding-bottom: 10px;" src="meme3.png"></img>
+    <img style="display: block; margin-left: auto; margin-right: auto; width: 500px; height: 500px; padding-bottom: 10px;" src="{{picture}}"></img>
   </div>
+{{/each}}
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container-fluid" style="padding-top: 10px;">

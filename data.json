@@ -1,0 +1,13 @@
+{
+	"memes": [
+		{
+			"picture": "meme1.png"
+		},
+		{
+			"picture": "meme2.png"
+		},
+		{
+			"picture": "meme3.png"
+		}
+	]
+}
