@@ -15,16 +15,16 @@
 
 </head>
 <body>
-<form id="completeForm" role="form" action="/uploadImg">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid" style="padding-top: 10px;">
     <div class="row">
       <div class="col-sm-4">
-        <button id="cancel" style="margin: 0 auto; width: 100px">X</button>
+        <button id="cancel" action="/" style="margin: 0 auto; width: 100px">X</button>
       </div>
       <div class="col-sm-4">
       	<h4>MEME UPLOAD</h4>
       </div>
+      <form id="completeForm" role="form" action="/uploadImg">
       <div class="col-sm-4">
         <img src="meme4.jpg" width="50px" height="50px" id="uploadedImg"></img>
         <button id="upload" action="/upload" style="margin: 0 auto; width: 100px">O</button>
