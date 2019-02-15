@@ -1,13 +1,16 @@
 {
 	"memes": [
 		{
-			"picture": "meme1.png"
+			"picture": "meme1.png",
+			"caption": "#computerscience"
 		},
 		{
-			"picture": "meme2.png"
+			"picture": "meme2.png",
+			"caption": "#computerscience"
 		},
 		{
-			"picture": "meme3.png"
+			"picture": "meme3.png",
+			"caption": "#computerscience"
 		}
 	]
 }

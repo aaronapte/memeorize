@@ -11,14 +11,14 @@ $( document ).ready(function() {
   console.log('working as intended');
 });
 $('#login-profile-button').click(function(){
-  if (loggedIn == false){
-    loggedIn==true;
-    $("body").load("login");
+  if (sessionStorage.getItem("isLoggedIn") == "false"){
+    sessionStorage.setItem("isLoggedIn", "true");
+    location.href='login';
   }
 });
  $("#uploadMainButton").click(function(){
      console.log("test");
-     $("body").load("upload")
+     location.href='upload';
  });
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
