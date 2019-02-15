@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var upload = require('./routes/upload');
 var login = require('./routes/login');
 var loggedIn = require('./routes/loggedIn');
+var uploadImg = require('./routes/uploadImg')
 
 // Example route
 // var user = require('./routes/user');
@@ -40,6 +41,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/upload', upload.viewUpload);
+app.get('/uploadImg', uploadImg.addFriend);
 app.get('/login', login.viewLogin);
 app.get('/loggedIn',loggedIn.viewLoggedIn);
 // Example route

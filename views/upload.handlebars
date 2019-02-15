@@ -15,6 +15,7 @@
 
 </head>
 <body>
+<form id="completeForm" role="form" action="/uploadImg">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid" style="padding-top: 10px;">
     <div class="row">
@@ -25,7 +26,8 @@
       	<h4>MEME UPLOAD</h4>
       </div>
       <div class="col-sm-4">
-        <button style="margin: 0 auto; width: 100px">O</button>
+        <img src="meme1.png" width="50px" height="50px" id="uploadedImg"></img>
+        <button id="upload" action="/upload" style="margin: 0 auto; width: 100px">O</button>
       </div>
     </div>
   </div>
@@ -34,11 +36,13 @@
   <div style="text-align: center; padding-left:16px">
     <button style="align-content: center; margin: 0 auto; width: 100px">Upload</button>
   </div>
-  <form>
-    Title: <input type="text" name="title"><br>
-    Description: <textarea></textarea><br>
-    Tags:
-    <select>
+  <form method="POST" name="uploadForm">
+  <label for="title">Title: </label>
+  <input type="text" name="title" id="memeTitle"><br>
+  <label for="description">Description: </label>
+  <textarea name="description" id="memeDescription"></textarea><br>
+  <label for="tag">Tags: </tabel>
+  <select name="subject" id="memeSubject">
       <option value="math">Math</option>
       <option value="english">English</option>
       <option value="science">Science</option>
@@ -48,5 +52,6 @@
     </select>
   </form>
 </div>
+</form>
 </body>
 </html>
