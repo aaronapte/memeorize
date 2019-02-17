@@ -1,12 +1,17 @@
 $( document ).ready(function() {
 
-  $('#login-profile-button').append("Profile");
   $( ".cross" ).hide();
   $( ".menu" ).hide();
   $( ".hamburger" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
     $( ".hamburger" ).hide();
     $( ".cross" ).show();
+
+$(".fas fa-heart").hide();
+
+$(".far fa-heart").click(function() {
+  $(".far fa-heart").hide();
+  $(".fas fa-heart").show(); });
   });
   console.log('working as intended');
 });
@@ -27,3 +32,7 @@ $( ".cross" ).click(function() {
     });
   });
 });
+
+$('#logout-profile-button').click(function(){
+  location.href='login';
+ });

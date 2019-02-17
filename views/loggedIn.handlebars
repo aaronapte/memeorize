@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -13,61 +14,76 @@
 
 </head>
 <body>
+  <!--Header-->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid" style="padding-top: 10px;">
+  <div class="container-fluid" style="padding-top: 15px; padding-bottom: 15px;">
     <div class="row">
       <div class="col-sm-1">
-        <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button>
-        <div class="menu">
-          <ul>
-            <a href="#"><li>Biology</li></a>
-            <a href="#"><li>Math</li></a>
-            <a href="#"><li>English</li></a>
-            <a href="#"><li>History</li></a>
-            <a href="#"><li>Art</li></a>
-            <a href="#"><li>Computer Science</li></a>
-          </ul>
-        </div>
+        <button class="hamburger" id="subjects" type="button" href="subjects.handlebars" style="font-size: 60px;""><i class="fas fa-bars"></i></button>
       </div>
       <div class="col-sm-7">
-      	<h4>MEMEMORIZE</h4>
+        <h4 style="font-size: 60px; text-align: right; font-family:times"><b><i>Mememorize</i></b></h4>
       </div>
-      <div class="col-sm-4">
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
+      <div class="col-sm-4" style="padding-left: 200px">
+        <i class="fas fa-sign-out-alt" style="font-size: 70px; padding-top: 10px;" id = "logout-profile-button"><button type="button"></button></i>
+      </div>
+
       </div>
     </div>
   </div>
 </nav>
+<!--End of Header-->
+
+<div class="search-container" style="padding-top: 175px;" size="40">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" style="font-size: 200%;"><i class="fa fa-search"></i></button>
+          </form>
+          </div>
 {{#each pictures}}
-<div class="main" style="padding-top: 70px; padding-bottom: 70px;">
-  <div style="padding-left:16px">
-    <figure>
-      <img style="display: block; margin-left: auto; margin-right: auto; width: 500px; height: 500px; padding-bottom: 10px;" src="{{picture}}"></img>
-      <figcaption style="text-align: center; padding-bottom: 10px;"> {{caption}}</figcaption>
+<div class="main" style="padding-top: 15px; padding-bottom: 15px; text-align: center; padding: 60px;">
+  <table class ="corner" border="1"><th>
+  <br>
+ <fieldset>
+   <legend></legend>
+   <figure>
+      <img style="display: block; margin-left: auto; margin-right: auto; width: 700px; height: 550px;" src="{{picture}}"></img>
     </figure>
-  </div>
-{{/each}}
+    <br>
+    <figcaption style="text-align: center; padding-bottom: 10px; font-size: 30px;"> {{caption}}</figcaption>
+    <br>
+    <table class="corner2" border="1">
+      <tr>
+    <th><i class="far fa-heart" style="font-size: 60px;"></i></i></th>
+ <th><i class="far fa-comment" style="font-size: 60px;"></i></th>
+  <th><i class="fas fa-user-circle" style="font-size: 60px; "></i></th>
+  </tr>
+  </table>
+ </fieldset>
+    </div>
+  </br>
+  </th></table>
 </div>
+{{/each}}
+<div style="padding-bottom: 200px;">
+</div>
+
+<!--Footer-->
 <nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container-fluid" style="padding-top: 10px;">
+  <div class="container-fluid" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="row">
       <div class="col-sm-4" style="text-align: center;">
-        <button style="width: 50%;" type="button">Settings</button>
+        <button style="width: 50%; " type="button"><i class="far fa-question-circle" style="font-size: 80px;"></i></button>
       </div>
       <div class="col-sm-4" style="text-align: center;">
-        <button style="width: 50%;" id="uploadMainButton" type="button" href="upload.handlebars">Upload</button>
+       <button style="width: 50%;" id="uploadMainButton" type="button" href="upload.handlebars"><i class="far fa-plus-square" style="font-size: 80px;"></i></button>
       </div>
       <div class="col-sm-4" style="text-align: center;">
-        <button style="width: 50%;" type="button" id = "login-profile-button"></button>
+        <button style="width: 50%;" type="button" id = "login-profile-button"><i class="fas fa-user" style="font-size: 80px;" ></i></button>
       </div>
     </div>
   </div>
 </nav>
+<!--End of Footer-->
 </body>
 </html>

@@ -3,7 +3,6 @@ $( document ).ready(function() {
   {
     $("body").load("loggedIn");
   }
-  $('#login-profile-button').append("Log In");
   $( ".cross" ).hide();
   $( ".menu" ).hide();
   $( ".hamburger" ).click(function() {

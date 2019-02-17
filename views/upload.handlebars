@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width-device-width, initial-scale=1">
+ 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -11,47 +11,93 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="/stylesheets/upload.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <script src = "/js/upload.js"></script>
 
 </head>
 <body>
+
+<!--Header-->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid" style="padding-top: 10px;">
+  <div class="container-fluid" style="padding-top: 15px; padding-bottom: 15px;">
     <div class="row">
-      <div class="col-sm-4">
-        <button id="cancel" action="/" style="margin: 0 auto; width: 100px">X</button>
+      <div class="col-sm-1">
+        <button id="cancel" action="/" style="font-size: 65px; padding-left: 20px;"><i class="fas fa-times"></i></button>
       </div>
-      <div class="col-sm-4">
-      	<h4>MEME UPLOAD</h4>
+      <div class="col-sm-8">
+        <h4 style="font-size: 50px; padding-left: 200px; padding-top: 15px; font-family:times"><b><i>Upload Your Meme</i></b></h4>
       </div>
-      <form id="completeForm" role="form" action="/uploadImg">
-      <div class="col-sm-4">
-        <img src="meme4.jpg" width="50px" height="50px" id="uploadedImg"></img>
-        <button id="upload" action="/upload" style="margin: 0 auto; width: 100px">O</button>
+       <form id="completeForm" role="form" action="/uploadImg"></form>
+      <div class="col-sm-3">
+        
+        <button id="upload" action="/upload" style="font-size: 65px; padding-left: 90px;"><i class="fas fa-upload"></i></button>
       </div>
     </div>
   </div>
 </nav>
-<div class="main" style="padding-top: 100px; padding-bottom: 100px;">
-  <div style="text-align: center; padding-left:16px">
-    <!--<button style="align-content: center; margin: 0 auto; width: 100px">Upload</button>-->
-  </div>
+<div style="padding-bottom: 250px;"></div>
+<!--End of Header-->
+
+<div class="main">
+ 
+  <img src="meme4.jpg" style="padding-left: 200px;" width="800px" height="550px" id="uploadedImg"></img>
   <form method="POST" name="uploadForm">
-  <label for="title">Title: </label>
-  <input type="text" name="title" id="memeTitle"><br>
-  <label for="description">Description: </label>
-  <textarea name="description" id="memeDescription"></textarea><br>
-  <label for="tag">Tags: </tabel>
-  <select name="subject" id="memeSubject">
-      <option value="math">Math</option>
-      <option value="english">English</option>
-      <option value="science">Science</option>
-      <option value="history">History</option>
-      <option value="art">Art</option>
-      <option value="computerscience">Computer Science</option>
+  <div style="padding-left: 135px;">
+<table border="1" style="padding: 20px;">
+  <tr>
+  <td><label for="title" style="font-size: 40px; text-align: left; padding-left: 10px; padding-right: 10px;">Title: </label></td>
+  <th><input type="text" style="font-size: 40px;" name="title" id="memeTitle">
+</th>
+</tr>
+<tr>
+  <br>
+  <td><label for="description" style="font-size: 40px; text-align: left; padding-left: 10px; padding-right: 10px;">Description: </label></td>
+   <th><textarea name="description" style="font-size: 40px;" id="memeDescription"></textarea>
+</th>
+</tr>
+<tr>
+  <br>
+  <td><label for="tag" style="font-size: 40px; text-align: left; padding-left: 10px; padding-right: 10px;">Tags: </label></td>
+  <th><select name="subject" id="memeSubject" style="font-size: 40px;">
+      <option value="math" style="font-size: 20px;">Math</option>
+      <option value="english" style="font-size: 20px;">English</option>
+      <option value="science" style="font-size: 20px;">Science</option>
+      <option value="history" style="font-size: 20px;">History</option>
+      <option value="art" style="font-size: 20px;">Art</option>
+      <option value="computerscience" style="font-size: 20px;">Computer Science</option>
     </select>
+  </th>
+</tr>
+<br>
   </form>
+  </table>
+</div>
 </div>
 </form>
+ </div>
+
+
+
+
+<div style="padding-bottom: 200px;">
+</div>
+
+<!--Footer-->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid" style="padding-top: 40px; padding-bottom: 40px;">
+    <div class="row">
+      <div class="col-sm-4" style="text-align: center;">
+        <button style="width: 50%; " type="button"><i class="far fa-question-circle" style="font-size: 80px;"></i></button>
+      </div>
+      <div class="col-sm-4" style="text-align: center;">
+       <button style="width: 50%;" id="uploadMainButton" type="button" href="upload.handlebars"><i class="far fa-plus-square" style="font-size: 80px;"></i></button>
+      </div>
+      <div class="col-sm-4" style="text-align: center;">
+        <button style="width: 50%;" type="button" id = "login-profile-button"><i class="fas fa-user" style="font-size: 80px;" ></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--End of Footer-->
 </body>
 </html>

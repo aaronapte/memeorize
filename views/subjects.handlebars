@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/index.css">
+<script src = "/js/index.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" style="padding-top: 10px;">
+    <div class="row">
+      <div class="col-sm-1">
+        <button class="hamburger">&#9776;</button>
+      </div>
+      <div class="col-sm-7">
+      	<h4>MEMEMORIZE</h4>
+      </div>
+      <div class="col-sm-4">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+{{#each pictures}}
+<div class="main" style="padding-top: 70px; padding-bottom: 70px;">
+  <div style="padding-left:16px">
+    <figure>
+      <img style="display: block; margin-left: auto; margin-right: auto; width: 500px; height: 500px; padding-bottom: 10px;" src="{{picture}}"></img>
+      <figcaption style="text-align: center; padding-bottom: 10px;"> {{caption}}</figcaption>
+    </figure>
+  </div>
+{{/each}}
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid" style="padding-top: 10px;">
+    <div class="row">
+      <div class="col-sm-6" style="text-align: center;">
+        <button style="width: 50%;" type="button">Settings</button>
+      </div>
+      <!--<div class="col-sm-4" style="text-align: center;">
+        <button style="width: 50%;" id="uploadMainButton" type="button" href="upload.handlebars">Upload</button>
+      </div>-->
+      <div class="col-sm-6" style="text-align: center;">
+        <button style="width: 50%;" type="button" id = "login-profile-button"></button>
+      </div>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
