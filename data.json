@@ -2,15 +2,18 @@
 	"memes": [
 		{
 			"picture": "meme1.png",
-			"caption": "#computerscience"
+			"caption": "#computerscience",
+			"postNumber": "1"
 		},
 		{
 			"picture": "meme2.png",
-			"caption": "#computerscience"
+			"caption": "#computerscience",
+			"postNumber": "2"
 		},
 		{
 			"picture": "meme3.png",
-			"caption": "#computerscience"
+			"caption": "#computerscience",
+			"postNumber": "3"
 		}
 	]
 }
