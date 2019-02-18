@@ -2,7 +2,7 @@
 
 exports.addFriend = function(request, response) {
  // Your code goes here
- json = {'picture': "meme4.jpg",'caption': "#computer science"};
+ json = {'picture': "meme4.jpg",'caption': "#computerscience"};
  console.log("cs");
  console.log(json);
  data.memes.push(json);
