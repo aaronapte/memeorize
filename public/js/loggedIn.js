@@ -40,6 +40,8 @@ $( ".cross" ).click(function() {
   });
 });
 
+
+
 $('#logout-profile-button').click(function(){
   location.href='login';
  });

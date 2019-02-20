@@ -13,4 +13,8 @@ $(document).ready(function() {
     }
     //data.memes.push(json);
   });
+
+  $('#help').click(function(){
+  location.href='help';
+})
 });

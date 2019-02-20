@@ -11,6 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="/stylesheets/index.css">
+<link rel="stylesheet" href="/stylesheets/subjects.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <script src = "/js/login.js"></script>
 
@@ -23,7 +24,7 @@
         <button id="login-back" type="submit" "><i class="fas fa-chevron-left" style="font-size: 75px; padding-left: 30px; padding-top: 10px;"></i></button>
       </div>
       <div class="col-sm-7">
-        <h4 style="font-size: 60px; text-align: right; font-family:times"><b><i>Mememorize</i></b></h4>
+        <h4 style="font-size: 60px; padding-left: 300px; font-family:times"><b><i>Subjects</i></b></h4>
       </div>
       <div class="col-sm-3" style="padding-left: 200px">
       <button id="login-button" type="submit"><i class="fas fa-check" style="font-size: 75px; padding-top: 10px "></i></button>
@@ -33,39 +34,32 @@
     </div>
   </div>
 </nav>
-<div style="padding-bottom: 250px;"></div>
+<div style="padding-bottom: 225px;"></div>
 
-      
-    <i class="fas fa-user-circle" style="font-size: 300px; padding-left: 350px; padding-bottom: 30px;"></i>
-         
+      <div class="grid-container">
+  <div class="grid-item"><button id="art" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="art.jpg"> <div class="centered">Art</div></button></div>
+  <div class="grid-item"><button id="biology" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="biology.jpg"> <div class="centered">Biology</div></button></div>
+  <div class="grid-item"><button id="compsci" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="compsci.jpg"> <div class="centered">Computer Science</div></button></div>
+  <div class="grid-item"><button id="english" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="english.jpg"> <div class="centered">English</div></i></button></div>
+   <div class="grid-item"><button id="history" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="history.jpg"> <div class="centered">History</div></button></div>
+  <div class="grid-item"><button id="math" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="math.jpg"> <div class="centered">Math</div></button></div>
+</div>
+    
 
-    <form> 
 
-          <div class="form-group col-sm-11" style="padding-left: 125px; padding-bottom: 50px; ">
-            <label for="email" class="required-input" style="font-size: 40px; padding-bottom: 30px;">Email address</label>
-            <input type="email" style="font-size: 40px;" class="form-control" name="email" placeholder="name@example.com" required="">
-          </div>
-  
-          <div class="form-group col-sm-11" style="padding-left: 125px; padding-bottom: 50px;">
-            <label for="code" class="required-input" name="code" style="font-size: 40px; padding-bottom: 30px;">Passcode</label>
-            <input type="password" class="form-control assess-code-input" name="code" required="">
-          </div>
-  
-         
-          </form>
-            </div>
-
-    <div style="padding-bottom: 500px;"></div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container-fluid" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="row">
-      <div class="col-sm-6" style="text-align: center;">
-        <button style="width: 50%; " type="button"><i class="far fa-question-circle" style="font-size: 70px;"></i></button>
+       </div>
+        <div class="col-sm-4" id="help" style="text-align: center;">
+        <button style="width: 50%; "  href="help.handlebars" type="button"><i class="far fa-question-circle" style="font-size: 80px;"></i></button>
       </div>
-    
-      <div class="col-sm-6" style="text-align: center;">
-        <button style="width: 50%;" type="button" id = "login-profile-button"><i class="fas fa-user" style="font-size: 70px;" ></i></button>
+      <div class="col-sm-4" style="text-align: center;">
+       <button style="width: 50%;" id="uploadMainButton" type="button" href="upload.handlebars"><i class="far fa-plus-square" style="font-size: 80px;"></i></button>
+      </div>
+      <div class="col-sm-4" style="text-align: center;">
+        <button style="width: 50%;" type="button" id = "login-profile-button" href="loggedin.handlebars"><i class="fas fa-user" style="font-size: 80px;" ></i></button>
       </div>
     </div>
   </div>
