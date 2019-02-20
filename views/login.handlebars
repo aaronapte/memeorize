@@ -13,7 +13,46 @@
 <link rel="stylesheet" href="/stylesheets/index.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <script src = "/js/login.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '550689382105684',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   function checkLoginState() {
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+    }
+    function statusChangeCallback(response) {
+  console.log('Facebook login status changed.');
+  console.log(response);
+  // The response object is returned with a status field that lets the
+  // app know the current login status of the person.
+  // Full docs on the response object can be found in the documentation
+  // for FB.getLoginStatus().
+  if (response.status === 'connected') {
+    // Logged into your app and Facebook.
+        console.log('Successfully logged in with Facebook');
+         FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+  }
+}
+
+</script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -38,7 +77,8 @@
       
     <i class="fas fa-user-circle" style="font-size: 300px; padding-left: 350px; padding-bottom: 30px;"></i>
          
-
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
     <form> 
 
           <div class="form-group col-sm-11" style="padding-left: 125px; padding-bottom: 50px; ">
