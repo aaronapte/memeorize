@@ -18,6 +18,10 @@ $( document ).ready(function() {
      console.log("test");
      location.href='upload';
  });
+ $('#subjects').click(function(){
+        console.log("test");
+        location.href='subjects';
+    });
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
     $( ".cross" ).hide();

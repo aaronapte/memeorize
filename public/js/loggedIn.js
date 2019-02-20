@@ -21,6 +21,10 @@ $('#login-profile-button').click(function(){
     location.href='login';
   }
 });
+$('#subjects').click(function(){
+        console.log("test");
+        location.href='subjects';
+    });
  $("#uploadMainButton").click(function(){
      console.log("test");
      location.href='upload';

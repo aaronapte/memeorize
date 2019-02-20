@@ -13,6 +13,7 @@ var upload = require('./routes/upload');
 var login = require('./routes/login');
 var loggedIn = require('./routes/loggedIn');
 var uploadImg = require('./routes/uploadImg');
+var subjects = require("./routes/subjects");
 
 // Example route
 // var user = require('./routes/user');
@@ -45,7 +46,8 @@ app.get('/upload', upload.viewUpload);
 app.get('/uploadImg', uploadImg.addFriend);
 app.get('/login', login.viewLogin);
 app.get('/loggedIn',loggedIn.viewLoggedIn);
-app.get('/loginSearch', loggedIn.loginSearch)
+app.get('/loginSearch', loggedIn.loginSearch);
+app.get('/subjects', subjects.viewSubjects);
 // Example route
 // app.get('/users', user.list);
 
