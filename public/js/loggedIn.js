@@ -25,6 +25,9 @@ $('#subjects').click(function(){
         console.log("test");
         location.href='subjects';
     });
+$('#help').click(function(){
+  location.href='help';
+})
  $("#uploadMainButton").click(function(){
      console.log("test");
      location.href='upload';

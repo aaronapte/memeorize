@@ -22,6 +22,9 @@ $( document ).ready(function() {
         console.log("test");
         location.href='subjects';
     });
+$('#help').click(function(){
+  location.href='help';
+})
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
     $( ".cross" ).hide();
