@@ -30,7 +30,8 @@
   display: grid;
   grid-template-columns: auto auto;
   padding: 5px;
-  grid-column-gap: 10px;
+  grid-column-gap: 0px;
+  grid-row-gap: 70px;
   position: relative;
   text-align: center;
   color: white;
@@ -49,6 +50,6 @@
   transform: translate(-50%, -50%);
 } 
 img {
-	width:400px;
-	height: 225px;
+	width:375px;
+	height: 275px;
 }
