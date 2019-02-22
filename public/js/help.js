@@ -1,4 +1,10 @@
+
+
 $(document).ready(function() {
+
+	 $('#cancel').click(function(){
+       location.href='/';
+    });
  $('#login-profile-button').click(function(){
   location.href='loggedin';
  });

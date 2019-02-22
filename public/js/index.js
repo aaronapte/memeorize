@@ -14,17 +14,22 @@ $( document ).ready(function() {
  $('#login-profile-button').click(function(){
   location.href='login';
  });
- $("#uploadMainButton").click(function(){
-     console.log("test");
-     location.href='upload';
- });
+ //$("#uploadMainButton").click(function(){
+     //console.log("test");
+     //location.href='upload';
+ //});
+$("#cancel").click(function(){
+      console.log("testcancel");
+      location.href='/';
+  });
+ 
  $('#subjects').click(function(){
         console.log("test");
-        location.href='subjects';
+        location.href='subjectsNL';
     });
 $('#help').click(function(){
-  location.href='help';
-})
+  location.href='helpNL';
+});
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
     $( ".cross" ).hide();

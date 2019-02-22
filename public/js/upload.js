@@ -11,10 +11,13 @@ $(document).ready(function() {
       picture: document.getElementById("uploadedImg").src,
       caption: $("memeSubject").val()
     }
-    //data.memes.push(json);
+    data.memes.push(json);
   });
 
   $('#help').click(function(){
   location.href='help';
-})
+});
+  $('#login-profile-button').click(function(){
+  location.href='loggedin';
+ });
 });

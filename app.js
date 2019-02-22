@@ -14,7 +14,9 @@ var login = require('./routes/login');
 var loggedIn = require('./routes/loggedIn');
 var uploadImg = require('./routes/uploadImg');
 var subjects = require("./routes/subjects");
-var help = require("./routes/help")
+var help = require("./routes/help");
+var helpNL = require("./routes/helpNL");
+var subjectsNL = require("./routes/subjectsNL");
 
 // Example route
 // var user = require('./routes/user');
@@ -50,6 +52,8 @@ app.get('/loggedIn',loggedIn.viewLoggedIn);
 app.get('/loginSearch', loggedIn.loginSearch);
 app.get('/subjects', subjects.viewSubjects);
 app.get('/help', help.viewHelp);
+app.get('/helpNL', helpNL.viewHelpNL);
+app.get('/subjectsNL', subjectsNL.viewSubjectsNL);
 // Example route
 // app.get('/users', user.list);
 

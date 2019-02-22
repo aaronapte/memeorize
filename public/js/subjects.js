@@ -1,6 +1,11 @@
 $(document).ready(function() {
+
+	$("#cancel").click(function(){
+      console.log("testcancel");
+      location.href='/';
+  });
     $('#login-profile-button').click(function(){
-  location.href='login';
+  location.href='/';
  });
  $("#uploadMainButton").click(function(){
      console.log("test");
@@ -13,4 +18,5 @@ $(document).ready(function() {
 $('#help').click(function(){
   location.href='help';
 });
+
 });
