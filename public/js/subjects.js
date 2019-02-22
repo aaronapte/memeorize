@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	$('#art').click(function(){
+		console.log("hello");
+	})
+
 	$("#cancel").click(function(){
       console.log("testcancel");
       location.href='/';

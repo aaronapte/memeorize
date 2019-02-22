@@ -21,29 +21,29 @@
   <div class="container-fluid" style="padding-top: 15px; padding-bottom: 15px;">
     <div class="row">
       <div class="col-sm-1">
-        <button id="cancel" type="submit" "><i class="fas fa-chevron-left" style="font-size: 75px; padding-left: 30px; padding-top: 10px;"></i></button>
+        <button id="cancel" type="submit"><i class="fas fa-chevron-left" style="font-size: 75px; padding-left: 30px; padding-top: 10px;"></i></button>
       </div>
       <div class="col-sm-7">
         <h4 style="font-size: 60px; padding-left: 300px; font-family:times"><b><i>Subjects</i></b></h4>
       </div>
       <div class="col-sm-3" style="padding-left: 200px">
-      
+
 
       </div>
     </div>
   </div>
 </nav>
 <div style="padding-bottom: 225px;"></div>
-
-      <div class="grid-container">
-  <div class="grid-item"><button id="art" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="art.jpg"> <div class="centered">Art</div></button></div>
-  <div class="grid-item"><button id="biology" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="biology.jpg"> <div class="centered">Biology</div></button></div>
-  <div class="grid-item"><button id="compsci" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="compsci.jpg"> <div class="centered">Computer Science</div></button></div>
-  <div class="grid-item"><button id="english" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="english.jpg"> <div class="centered">English</div></i></button></div>
-   <div class="grid-item"><button id="history" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="history.jpg"> <div class="centered">History</div></button></div>
-  <div class="grid-item"><button id="math" class="btn btn-primary" type="button" href="loggedin.handlebars"><img src="math.jpg"> <div class="centered">Math</div></button></div>
-</div>
-    
+<form action="/searchSubjectsNL">
+  <div class="grid-container">
+    <div class="grid-item"><button value="art" name="subject"class="btn btn-primary" type="submit"><img src="art.jpg"> <div class="centered">Art</div></button></div>
+    <div class="grid-item"><button value="biology" name="subject"class="btn btn-primary" type="submit" ><img src="biology.jpg"> <div class="centered">Biology</div></button></div>
+    <div class="grid-item"><button value="compsci" name="subject"class="btn btn-primary" type="submit"><img src="compsci.jpg"> <div class="centered">Computer Science</div></button></div>
+    <div class="grid-item"><button value="english" name="subject"class="btn btn-primary" type="submit"><img src="english.jpg"> <div class="centered">English</div></i></button></div>
+     <div class="grid-item"><button value="history" name="subject" class="btn btn-primary" type="submit"><img src="history.jpg"> <div class="centered">History</div></button></div>
+    <div class="grid-item"><button value="math" name="subject" class="btn btn-primary" type="submit"><img src="math.jpg"> <div class="centered">Math</div></button></div>
+  </div>
+</form>
 
 
 

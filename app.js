@@ -54,6 +54,8 @@ app.get('/subjects', subjects.viewSubjects);
 app.get('/help', help.viewHelp);
 app.get('/helpNL', helpNL.viewHelpNL);
 app.get('/subjectsNL', subjectsNL.viewSubjectsNL);
+app.get('/searchSubjectsNL', subjectsNL.searchSubjectsNL);
+app.get('/searchSubjects', subjects.searchSubjects);
 // Example route
 // app.get('/users', user.list);
 
