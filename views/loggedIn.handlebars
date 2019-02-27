@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +15,21 @@
 
 <body>
 <!--Header-->
-{{>header}}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" style="padding-top: 15px; padding-bottom: 15px;">
+    <div class="row">
+      <div class="col-sm-1">
+        <button class="hamburger" id="subjects" type="button" href="subjects" style="font-size: 60px; padding-left: 30px;"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="col-sm-7">
+        <h4 style="font-size: 60px; text-align: right; font-family:times"><b><i>Mememorize</i></b></h4>
+      </div>
+      <div class="col-sm-4" style="padding-left: 200px">
+        <i class="fas fa-sign-out-alt" style="font-size: 70px; padding-top: 10px;" id = "logout-profile-button"><button type="button"></button></i>
+      </div>
+    </div>
+  </div>
+</nav>
   <!--End of Header-->
   <!--contents-->
   <div class="search-container" style="padding-top: 175px;" size="40">
@@ -41,7 +54,7 @@
           <br>
           <table class="corner2" border="1">
             <tr>
-              <th><i class="far fa-heart" style="font-size: 60px;"></i></th>
+              <th><i class="far fa-heart" style="font-size: 60px;"></i><p>postCount: {{postNumber}}</p></th>
               <th><i class="far fa-comment" style="font-size: 60px;"></i></th>
               <th><i class="fas fa-user-circle" style="font-size: 60px; "></i></th>
             </tr>
