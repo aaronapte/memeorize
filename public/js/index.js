@@ -28,7 +28,11 @@ $("#cancel").click(function(){
         location.href='subjectsNL';
     });
 $('#help').click(function(){
-  location.href='helpNL';
+  if(sessionStorage.getItem("isLoggedIn")=="true")
+    location.href='helpNL';
+  else if(sessionStorage.getItem("isLoggedIn")=="false"){
+    location.href = 'login'
+  }
 });
 $( ".cross" ).click(function() {
   $( ".menu" ).slideToggle( "slow", function() {
